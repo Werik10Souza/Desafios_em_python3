@@ -10,5 +10,4 @@ for numero in range(1, 10):
     print('{} X {} = {}'.format(numero, 8, numero*8))
     print('{} X {} = {}'.format(numero, 9, numero*9))
     print('{} X {} = {}'.format(numero, 10, numero*10))
-    #OK
     
