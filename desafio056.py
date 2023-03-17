@@ -1,4 +1,3 @@
-#FAÇA O PROGRAMA
 soma = 0
 maior = 0
 contagem_mulheres = 0
