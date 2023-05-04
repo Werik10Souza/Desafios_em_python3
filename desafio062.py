@@ -21,8 +21,7 @@ while contador <= 10:
     sleep(2)
 print('='*50)
 
-print('\nQUER CONTINUAR[1] ou ENCERRAR[0]? Digite LOGO ABAIXO')
-encerramento = int(input('DESEJA: ', '\n'))
+encerramento = int(input('\nQUER CONTINUAR[1] ou ENCERRAR[0]?'))
 
 if encerramento == 1: #*CONTINUAR
     an = primeiro_termo + (10 - 1) * razao
