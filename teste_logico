@@ -1,0 +1,35 @@
+=================
+TESTE LÓGICO     
+=================
+------------------------------------------------DESAFIO 066----------------------------------------------------------
+
+°Crie um programa que LEIA VÁRIOS números inteiros pelo teclado.
+
+    -Crie uma variável, que vai se chamar(numeros), que por sua vez vai RECEBER(=) os atributos inteiro(int),  e o input(ele será o responsavel, pela leitura dos números digitados no teclado.)
+
+°Crie um laço/loop enquanto verdadeiro(while True). O while True, o laço vai executa TUDO QUE ESTÁ DENTRO DELE, indifinidamente.
+
+    -CRIE o while True:
+        ..........
+        ..........
+            ......
+
+°O programa só vai PARAR quando o USUÁRIO digitar o valor 999(corresponde a flag de parada, que por sua vez é a condição).
+
+    -SE os NUMEROS(corresponde a variável de cima antes criada para ler os números digitados pelo o usuário), for    IGUAL(==) a 999.
+        -DENTRO da condição ESCREVA o comando de INTERROMPEÇÃO, em inglês BREAK. Para sair do laço(while True).
+
+°No final, MOSTRE QUANTOS NÚMEROS foram digitados.
+    
+     -Para isso funcionar termos que criar um CONTADOR, dentro do LAÇO WHILE TRUE, para conta os números digitados pelo o usuário.
+
+°Ainda no final do programa, MOSTRE a SOMA dos valores digitados pelo o USUÁRIO no teclado.
+
+    -Essa mesma situação se aplicar ao exemplo acima. Termos que criar uma variável dentro do LAÇO WHILE TRUE. Para SOMAR todos os valores digitados pelo USUÁRIO.
+
+            *ATENÇÃO:
+                SOMA receber(=), SOMA mais(+) NUMEROS(que fora digitados pelo o usuário pelo o teclado).
+                            -EXEMPLO:
+                                -PRIMEIRO NÚMERO digitado pelo o usuário, vai ser SOMANDO com o SEGUNDO NÚMERO digitado, assim por diante, até o final do programa.
+
+FIM DO PROGRAMA!
