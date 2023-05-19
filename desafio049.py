@@ -1,4 +1,4 @@
-for numero in range(1, 10):
+for x in range(1, 10):
     numero = int(input('Digite um valor: '))
     print('\n{} X {} = {}'.format(numero, 1, numero*1))
     print('{} X {} = {}'.format(numero, 2, numero*2))
