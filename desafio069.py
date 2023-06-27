@@ -7,7 +7,6 @@
 #?C) QUANTOS MULHERES TEM MENOS DE 20 ANOS.
 
 idade = 0
-sexo = ''
 continuar = 'N'
 pessoas = 0
 homens = 0
@@ -15,8 +14,9 @@ mulheres_menos_vinte = 0
 
 while True:
     idade = int(input('Quantos anos, você possuir atualmente?: '))
-    sexo = str(input('Qual é o seu sexo[M/F]?: ').upper().strip())
-    print('\n=============================================')
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('Qual é o seu sexo[M/F]?: ')).upper().strip()[0]
     if(idade > 18):
         pessoas = pessoas + 1
     if(sexo == 'M'):
