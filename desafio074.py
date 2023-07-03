@@ -4,19 +4,19 @@
 
 from random import randint
 
-maior = 0
-menor = 0
+numeros_aleat01 = randint(0,9)
+numeros_aleat02 = randint(0,9)
+numeros_aleat03 = randint(0,9)
+numeros_aleat04 =  randint(0,9)
+numeros_aleat05 = randint(0,9)
 
-numeros_aleatorios = randint(0,4)
+tupla = (numeros_aleat01, numeros_aleat02, numeros_aleat03, numeros_aleat04, numeros_aleat05)
 
-maior = numeros_aleatorios + 1
-menor = numeros_aleatorios - 1
+print(tupla)
 
-print('-'*20)
-print('LISTA DE NÚMEROS SORTEADOS\n')
-print()
-print('-'*20)
+
+print('\n')
 print('='*20)
-print('MAIOR: {}'.format(maior))
-print('MENOR: {}'.format(menor))
+print('MAIOR: {}'.format(max(tupla)))
+print('MENOR: {}'.format(min(tupla)))
 print('='*20)
