@@ -7,14 +7,14 @@
 #?D) Em que posição na tabela está o time da Flamengo.
 
 
-tabela = ('', 'Botafogo', 'Grêmio', 'Flamengo', 'Palmeiras', 'Fluminese', 'Internacional', 'Bragantino', 'Fortaleza', 'Athletico-PR', 'Atlético-MG', 'São Paulo', 'Cruzeiro', 'Santos', 'Bahia', 'Corinthians', 'Cuiabá', 'Goiás', 'Vasco da Gama', 'América-MG', 'Coritiba')
+tabela = ('Botafogo', 'Grêmio', 'Flamengo', 'Palmeiras', 'Fluminese', 'Internacional', 'Bragantino', 'Fortaleza', 'Athletico-PR', 'Atlético-MG', 'São Paulo', 'Cruzeiro', 'Santos', 'Bahia', 'Corinthians', 'Cuiabá', 'Goiás', 'Vasco da Gama', 'América-MG', 'Coritiba')
 
 print('='*25)
 print('{}'.format('Classificação Série A'))
 print('='*25)
 
 print('\nOs cinco primeiros colocados de 2023:\n')
-print(tabela[1:6])
+print(tabela[0:5])
 
 print('\nOs últimos quarto colocados de 2023:\n')
 print(tabela[-4:])
