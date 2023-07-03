@@ -23,4 +23,4 @@ print('\nOrdem Alfabéica:\n')
 print(sorted(tabela))
 
 print('Posição do Flamengo na tabela do campeonato brasileiro de 2023:\n')
-print(tabela.index('Flamengo'))
+print(tabela.index('Flamengo')+ 1)
