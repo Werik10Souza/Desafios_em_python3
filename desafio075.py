@@ -7,28 +7,23 @@
 
 #? C) Quais foram os números 'pares'.
 
-lista = ()
+numero01 = int(input('Digite qualquer número inteiro da sua preferência: '))
+numero02 = int(input('Digite qualquer número inteiro da sua preferência: '))
+numero03 = int(input('Digite qualquer número inteiro da sua preferência: '))
+numero04 = int(input('Digite qualquer número inteiro da sua preferência: '))
 
-for lista01 in range(1):
-    valor = int(input('Digite um valor inteiro qualquer: '))
-    lista01 = valor
-    for lista02 in range(1):
-        valor = int(input('Digite um valor inteiro qualquer: '))
-        lista02 = valor
-    for lista03 in range(1):
-        valor = int(input('Digite um valor inteiro qualquer: '))
-        lista03 = valor
-        for lista04 in range(1):
-            valor = int(input('Digite um valor inteiro qualquer: '))
-            lista04 = valor
-    lista = lista01, lista02, lista03, lista04
-print('\n', lista, '\n')
+tupla = (numero01, numero02, numero03, numero04)
 
-print('='*20)
-print('parece o valor nove:')
-print('\n', lista.count(9), 'vezes')
-print('='*20)
-print('\n', '='*40)
-print('O valor três foi digitado na posição:')
-print(lista.index(3))
-print('='*40)
+print('\n', tupla)
+
+print('\n','='*60)
+print('\nQuantas vezes vezes apareceu o valor 9?: {} VEZ(ES)'.format(tupla.count(9)))
+if 3 in tupla:
+    print('Em qual posição foi digitado o primeiro valor 3? {}ª posição'.format(tupla.index(3)))
+else:
+    print('O valor 3 NÃO foi digitado em nenhuma posição')
+print('Quais foram os números PAR(ES)?', end=' ')
+for n in tupla:
+    if n % 2 == 0:
+        print(n, end=' ')
+print('\n', '='*60)
