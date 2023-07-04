@@ -10,5 +10,5 @@ lista_de_compras = ('\nQueijo ........................R$7.20 (1 unidade)'
                     '\nCarne ...........................R$50.00 (1KG)'
                     '\nFarinha ..........................R$2.82 (1KG)'
                     '\nManteiga .........................R$4.58 (1unidade)'
-                    '\nLata de sadinha ..................R$3.12 (1unidade)\n')
+                    '\nLata de sardinha ..................R$3.12 (1unidade)\n')
 print(lista_de_compras)
