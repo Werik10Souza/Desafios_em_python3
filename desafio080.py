@@ -16,5 +16,4 @@ for contador in range(0,5):
             if numero <= valores[posicao]:
                 valores.insert(posicao, numero)
                 break
-            posicao = posicao + 1
 print('\nOs valores digitados em ordem foram {}'.format(valores))
