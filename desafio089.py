@@ -1,0 +1,2 @@
+
+#*Crie um programa que leia NOME e DUAS NOTAS de vários alunos e guarde tudo em uma LISTA COMPOSTA. No final, mostre um BOLETIM contendo a MÉDIA de cada um e permita que o usuário possa mostrar as notas de cada aluno individualmente.
