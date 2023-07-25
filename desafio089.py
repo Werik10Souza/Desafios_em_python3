@@ -1,5 +1,5 @@
 
-#*Crie um programa que leia NOME e DUAS NOTAS de vários alunos e guarde tudo em uma LISTA COMPOSTA. No final, mostre um BOLETIM contendo a MÉDIA de cada um e permita que o usuário possa mostrar as notas de cada aluno individualmente.
+#*[Crie um programa que leia NOME e DUAS NOTAS de vários alunos e guarde tudo em uma LISTA COMPOSTA.] No final, [mostre um BOLETIM contendo a MÉDIA de cada um] e [permita que o usuário possa mostrar as notas de cada aluno individualmente.]
 
 pessoas = []
 nomes_notas = []
@@ -23,6 +23,16 @@ while True:
     if pergunta == 'N':
         break
 
+print('\n','¨'*50)
+print(':'*15,'MÉDIA DOS ALUNOS',':'*15)
+print('¨'*50)
+print('='*40)
+print('NOME', '  MEDIA')
+print('='*40)
 
-print('\n', pessoas, '\n')
- 
+print('-'*40)
+for posicao, nota in enumerate(pessoas):
+    media = (nota[1] + nota[2]) / 2
+    print(f'{posicao + 1} º {nota[0]:<15} {media:>10}')
+print('-'*40)
+
