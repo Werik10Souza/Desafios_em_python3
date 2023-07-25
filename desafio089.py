@@ -10,8 +10,8 @@ while True:
     nome = str(input('\nDigite o nome: ').upper().strip())
     nomes_notas.append(nome)
 
-    nota_01 = float(input('\nDigite a nota: '))
-    nota_02 = float(input('Digite a nota: '))
+    nota_01 = float(input('\nDigite a nota 1º: '))
+    nota_02 = float(input('Digite a nota 2º: '))
     nomes_notas.append(nota_01)
     nomes_notas.append(nota_02)
     pessoas.append(nomes_notas[:])
