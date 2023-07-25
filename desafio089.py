@@ -26,13 +26,13 @@ while True:
 print('\n','¨'*50)
 print(':'*15,'MÉDIA DOS ALUNOS',':'*15)
 print('¨'*50)
-print('='*40)
-print('NOME', '  MEDIA')
-print('='*40)
+
+print('-'*40)
+print('   NOME', '                 MEDIA')
 
 print('-'*40)
 for posicao, nota in enumerate(pessoas):
     media = (nota[1] + nota[2]) / 2
-    print(f'{posicao + 1} º {nota[0]:<15} {media:>10}')
+    print(f'{posicao + 1} º {nota[0]:<20} {media:>5}')
 print('-'*40)
 
