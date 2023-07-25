@@ -3,6 +3,7 @@
 
 pessoas = []
 nomes_notas = []
+
 pergunta = 'N'
 
 
