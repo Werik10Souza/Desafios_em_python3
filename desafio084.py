@@ -15,8 +15,9 @@ resposta = 'N'
 
 contador = 0
 
-pesada = 0
-leve = 0
+pesada = [] 
+
+leve = []
 
 while True:
     nome = str(input('\nDigite o seu nome: '))
@@ -33,9 +34,5 @@ while True:
         break
 print('\n',pessoas)
 print('\nPessoas cadastradas: {}'.format(contador))
-for pessoa in pessoas:
-    if pessoa[1] >= 100:
-        print('ºpesado: {}'.format(pessoa[0]))
-    else:
-        if pessoa[1] <= 65:
-            print('ºleve: {}'.format(pessoa[0]))
+
+
