@@ -35,11 +35,11 @@ print(matriz[6], matriz[7], matriz[8])
 print('='*20)
 print('\n', 'SOMA dos valores PARES: {}'.format(par))
 
-linha_tres = matriz[6] + matriz[7] + matriz[8]
+coluna_tres = matriz[2] + matriz[5] + matriz[8]
 
-soma = linha_tres[0] + linha_tres[1]  + linha_tres[2]
+soma = coluna_tres[0] + coluna_tres[1]  + coluna_tres[2]
 
-print('\nSOMA dos valores da linha três: {}'.format(soma))
+print('\nSOMA dos valores da coluna três: {}'.format(soma))
 
 linha_dois =  matriz[3] + matriz[4] + matriz[5]
 
