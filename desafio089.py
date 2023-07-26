@@ -39,7 +39,7 @@ print('-'*40)
 while True:
     aluno = int(input('Escolhar aluno e sua nota [999 para finalizar ação]: '))
     if aluno == 999:
-        finalizando = str('FINALIZANDO OPERAÇÃO...'.split(2))
+        print('FINALIZANDO OPERAÇÃO...')
         print('='*10)
         print('FIM!!!')
         print('='*10)
