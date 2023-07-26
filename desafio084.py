@@ -30,9 +30,24 @@ while True:
         dados.append(peso)
     pessoas.append(dados[:])
     dados.clear()
+
+    if peso >= 100:
+        pesada.append(nome)
+        pesada.append(peso)
+    if peso <= 60:
+        leve.append(nome)
+        leve.append(peso)
+    
     if resposta == 'N':
         break
+
 print('\n',pessoas)
-print('\nPessoas cadastradas: {}'.format(contador))
-
-
+print('\nPessoas cadastradas: {} \n'.format(contador))
+print('\n','='*40)
+print('PESSOAS PESADAS')
+print('='*40)
+print(pesada)
+print('\n', '='*40)
+print('PESSOAS LEVES')
+print('='*40)
+print(leve)
