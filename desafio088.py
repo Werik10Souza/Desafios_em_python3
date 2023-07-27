@@ -15,7 +15,7 @@ for numero in range(0,6):
     palpites.append(numeros[:])
     numeros.clear()
 print('='*60)
-print('                         P A L P I T E S')
+print('                     P A L P I T E S')
 print('='*60)
 
 print(palpites * jogos)
