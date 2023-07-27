@@ -11,9 +11,10 @@ print('\n')
 
 for numero in range(0,6):
     numero = randint(1,60)
-    numeros.append(numero)
-    palpites.append(numeros[:])
-    numeros.clear()
+    if numero not in numeros:
+        numeros.append(numero)
+        palpites.append(numeros[:])
+        numeros.clear()
 print('='*60)
 print('                     P A L P I T E S')
 print('='*60)
