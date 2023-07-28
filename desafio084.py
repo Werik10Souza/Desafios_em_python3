@@ -15,39 +15,32 @@ resposta = 'N'
 
 contador = 0
 
-pesada = [] 
-
-leve = []
+maior = 0
+menor = 0
 
 while True:
-    nome = str(input('\nDigite o seu nome: '))
-    peso = float(input('Digite o seu peso: '))
-    contador = contador + 1
-    resposta = str(input('\nQuer continuar[S/N]?: ').upper().strip() [0])
-    if nome not in dados:
-        dados.append(nome)
-    if peso not in dados:
-        dados.append(peso)
+    dados.append(str(input('\nDigite o seu nome: ')))
+    dados.append(float(input('Digite o seu peso: ')))
+
+
+    if len(pessoas) == 0:
+        maior = menor = dados[1]
+    else:
+        if dados[1] > maior:
+            maior = dados[1]
+        if dados[1] < menor:
+            menor = dados[1]
     pessoas.append(dados[:])
     dados.clear()
 
-    if peso >= 100:
-        pesada.append(nome)
-        pesada.append(peso)
-    if peso <= 60:
-        leve.append(nome)
-        leve.append(peso)
+    contador = contador + 1
     
+    resposta = str(input('\nQuer continuar[S/N]?: ').upper().strip() [0])
+
     if resposta == 'N':
         break
 
 print('\n',pessoas)
-print('\nPessoas cadastradas: {} \n'.format(contador))
-print('\n','='*40)
-print('PESSOAS PESADAS')
-print('='*40)
-print(pesada)
-print('\n', '='*40)
-print('PESSOAS LEVES')
-print('='*40)
-print(leve)
+print(f'\nPessoas cadastradas: {contador} \n')
+print(f'O MAIOR peso foi de {maior}KG.')
+print(f'O MENOR peso foi de {menor}KG.')
