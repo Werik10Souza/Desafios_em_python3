@@ -43,4 +43,10 @@ while True:
 print('\n',pessoas)
 print(f'\nPessoas cadastradas: {contador} \n')
 print(f'O MAIOR peso foi de {maior}KG.')
+for pessoa in pessoas:
+    if pessoa[1] == maior:
+        print(pessoa[0])
 print(f'O MENOR peso foi de {menor}KG.')
+for pessoa in pessoas:
+    if pessoa[1] == menor:
+        print(pessoa[0])
