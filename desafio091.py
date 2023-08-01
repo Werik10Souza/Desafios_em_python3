@@ -31,5 +31,4 @@ for contador, numero in enumerate(lista):
 print('='*45)
 print('-=-=RANKING DOS JOGADORES-=-=')
 
-for indice in sorted(dicionario.items(), key=dicionario.get(1), reverse=True):
-   print(indice, dicionario[indice])
+
