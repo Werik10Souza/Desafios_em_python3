@@ -3,6 +3,7 @@
 #*DICIONÁRIO. No final, coloque esse dicionário em ORDEM, sabendo que o VENCEDOR tirou o MAIOR NÚMERO no dado.
 
 from random import randint
+from time import sleep
 
 dicionario = {}
 
@@ -25,6 +26,14 @@ for contador, numero in enumerate(lista):
 
     print(f'O jogador{contador+1} tem ', end=' ')
     for valor in numero.values():
-        print(valor)
+        print(valor, 'no dado')
+    sleep(2)
+print('='*45)
+print('-=-=-=-=-=RANKING DOS JOGADORES-=-=-=-=-=:')
 
-print('Ranking dos jogadores:')
+for indice in sorted(dicionario, key=dicionario.get):
+    for contador, indice in enumerate(dicionario):
+        print(f'1º lugar: jogador{dicionario} com ', end='')
+        for v in numero.values():
+            print(v)
+
