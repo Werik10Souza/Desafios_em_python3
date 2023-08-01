@@ -29,11 +29,7 @@ for contador, numero in enumerate(lista):
         print(valor, 'no dado')
     sleep(2)
 print('='*45)
-print('-=-=-=-=-=RANKING DOS JOGADORES-=-=-=-=-=:')
+print('-=-=RANKING DOS JOGADORES-=-=')
 
-for indice in sorted(dicionario, key=dicionario.get):
-    for contador, indice in enumerate(dicionario):
-        print(f'1º lugar: jogador{dicionario} com ', end='')
-        for v in numero.values():
-            print(v)
-
+for indice in sorted(dicionario.items(), key=dicionario.get(1), reverse=True):
+   print(indice, dicionario[indice])
