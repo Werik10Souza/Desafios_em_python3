@@ -4,31 +4,21 @@
 
 from random import randint
 from time import sleep
+from operator import itemgetter
 
-dicionario = {}
+jogo = {'jogador1': randint(1,6),
+        'jogador2': randint(1,6),
+        'jogador3': randint(1,6),
+        'jogador4': randint(1,6)}
+print('VALORES SORTEADOS')
+for chave, valor in jogo.items():
+    print(f'{chave} tirou {valor} no dado.')
+    sleep(1)
 
-lista = []
+ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)
 
-contador = 0
-
-for numero in range(0,4):
-    numero = randint(1,6)
-    dicionario['sorteado'] = numero
-    lista.append(dicionario.copy())
-    contador = contador + 1
-
-print(lista)
-print('\n')
-
-print('VALORES SORTEADOS:')
-
-for contador, numero in enumerate(lista):
-
-    print(f'O jogador{contador+1} tem ', end=' ')
-    for valor in numero.values():
-        print(valor, 'no dado')
-    sleep(2)
-print('='*45)
-print('-=-=RANKING DOS JOGADORES-=-=')
-
-
+print('='*30)
+print(' == RANKING DOS JOGADORES ==')
+for i, v in enumerate(ranking):
+    print(f'    {i+1}º lugar: {v[0]} com {v[1]}')
+    sleep(1)
