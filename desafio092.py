@@ -23,6 +23,18 @@ if carteira_trabalho != 0:
                 'Contratação' : ano_contratacao,
                 'Salário' : salario,
                 'Aposentadoria' : 35 - (ano_de_nascimento - ano_contratacao)}
-
-    print('='*110)
+    print('-='*110)
     print(carreira)
+    print('='*25)
+    for k, v in carreira.items():
+        print(f'{k} tem o valor {v}')
+else:
+    if carteira_trabalho == 0:
+        nao_carreira = {'Nome' : nome,
+                        'Idade' : idade,
+                        'CPTS' : carteira_trabalho}
+        print('-='*70)
+        print(nao_carreira)
+        print('='*25)
+        for k, v in nao_carreira.items():
+            print(f'{k} tem o valor {v}')
