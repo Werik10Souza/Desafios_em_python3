@@ -7,16 +7,30 @@ nome = str(input('Nome do Jogador: '))
 quantidades_partidas = int(input(f'Quantas partidas {nome} jogou?: '))
 
 contador = 0
+total = 0
 
 lista_gols = []
 
 while contador < quantidades_partidas:
-    gols_partida = int(input('Quantos gols na partida?: '))
+    gols_partida = int(input(f'Quantos gols na partida{contador}?: '))
     lista_gols.append(gols_partida)
     contador = contador + 1
+    total = total + gols_partida
 
-print('\n',lista_gols)
+analise = {'Nome' : nome,
+           'Gols' : lista_gols,
+           'Total' : total}
 
-#analise = {'Nome' : nome,
-           #'Gols' : lista_gols,
-           #'Toal' : total}
+print('-='*30)
+print(analise)
+print('-='*30)
+
+for k, v in analise.items():
+    print(f'O campo {k} tem o valor {v}')
+print('-='*30)
+
+print(f'O jogador {nome} jogou {contador} partidas')
+for indice, valor in enumerate(lista_gols):
+    print(f'    => Na partida {indice}, fez {valor} gols.')
+
+print(f'Foi um total de {total} gols.')
