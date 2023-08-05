@@ -22,7 +22,7 @@ while True:
         if  sexo in 'MmFf':
             break
         else:
-            print('ERROU!!! [M]Masculino ou [F]Feminino?')
+            print('ERRO!!! [M]Masculino ou [F]Feminino?')
     idade = int(input('Idade: '))
     contador = contador + 1
     soma_idades = soma_idades + idade
