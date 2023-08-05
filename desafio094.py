@@ -42,7 +42,6 @@ while True:
             break
         else:
             print('Erro!!! [S]Sim ou [N]Não?')
-
     if resposta == 'N':
         break
 
