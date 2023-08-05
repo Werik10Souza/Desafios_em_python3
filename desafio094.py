@@ -9,7 +9,6 @@
 contador = 0
 soma_idades = 0
 
-dados = {}
 lista = []
 
 while True:
@@ -19,6 +18,11 @@ while True:
     contador = contador + 1
     soma_idades = soma_idades + idade
 
+    dados = {'Nome' : nome,
+             'Sexo' : sexo,
+             'Idade' : idade}
+    
+    lista.append(dados.copy())
 
     resposta = str(input('\nQuer continuar [S/N]: ').upper().strip() [0])
 
