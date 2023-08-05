@@ -9,8 +9,6 @@
 contador = 0
 soma_idades = 0
 
-
-
 while True:
     nome = str(input('\nNome: '))
     sexo = str(input('Sexo [M/F]: ').upper().strip() [0])
@@ -18,7 +16,7 @@ while True:
     contador = contador + 1
     soma_idades = soma_idades + idade
 
-
+    
 
     resposta = str(input('\nQuer continuar [S/N]: ').upper().strip() [0])
 
