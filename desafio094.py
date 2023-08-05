@@ -46,6 +46,6 @@ print('-='*40)
 print(f'O grupo tem {contador} pessoas.')
 print(f'A média de idade é de {media} anos.')
 print(f'As mulheres cadastradas foram: {mulheres_lista}')
+print(f'Lista das pessoas que estão acima da média:')
 
-print(f'Lista das pessoas que estão acima da média: {lista}')
 print('\n<<ENCERRADO>>')
