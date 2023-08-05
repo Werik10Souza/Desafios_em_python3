@@ -17,7 +17,12 @@ acima_media = []
 
 while True:
     nome = str(input('\nNome: '))
-    sexo = str(input('Sexo [M/F]: ').upper().strip() [0])
+    while True:
+        sexo = str(input('Sexo [M/F]: ').upper().strip() [0])
+        if  sexo in 'MmFf':
+            break
+        else:
+            print('ERROU!!! [M]Masculino ou [F]Feminino?')
     idade = int(input('Idade: '))
     contador = contador + 1
     soma_idades = soma_idades + idade
@@ -47,5 +52,4 @@ print(f'A) O grupo tem {contador} pessoas.')
 print(f'B) A média de idade é de {media} anos.')
 print(f'C) As mulheres cadastradas foram: {mulheres_lista}')
 print(f'D) Lista das pessoas que estão acima da média:')
-
 print('\n<<ENCERRADO>>')
