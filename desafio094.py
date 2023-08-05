@@ -36,8 +36,12 @@ while True:
     if sexo == 'F':
         mulheres_lista.append(nome)
     
-
-    resposta = str(input('\nQuer continuar [S/N]: ').upper().strip() [0])
+    while True:
+        resposta = str(input('\nQuer continuar [S/N]: ').upper().strip() [0])
+        if resposta in 'SN':
+            break
+        else:
+            print('Erro!!! [S]Sim ou [N]Não?')
 
     if resposta == 'N':
         break
