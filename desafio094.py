@@ -43,9 +43,9 @@ media = soma_idades / contador
 print('\n')
 print(lista)
 print('-='*40)
-print(f'O grupo tem {contador} pessoas.')
-print(f'A média de idade é de {media} anos.')
-print(f'As mulheres cadastradas foram: {mulheres_lista}')
-print(f'Lista das pessoas que estão acima da média:')
+print(f'A) O grupo tem {contador} pessoas.')
+print(f'B) A média de idade é de {media} anos.')
+print(f'C) As mulheres cadastradas foram: {mulheres_lista}')
+print(f'D) Lista das pessoas que estão acima da média:')
 
 print('\n<<ENCERRADO>>')
