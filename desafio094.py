@@ -9,6 +9,9 @@
 contador = 0
 soma_idades = 0
 
+dados = {}
+lista = []
+
 while True:
     nome = str(input('\nNome: '))
     sexo = str(input('Sexo [M/F]: ').upper().strip() [0])
@@ -16,7 +19,6 @@ while True:
     contador = contador + 1
     soma_idades = soma_idades + idade
 
-    
 
     resposta = str(input('\nQuer continuar [S/N]: ').upper().strip() [0])
 
@@ -28,3 +30,4 @@ media = soma_idades / contador
 print('-='*40)
 print(f'O grupo tem {contador} pessoas.')
 print(f'A média de idade é de {media} anos.')
+print(lista)
