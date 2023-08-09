@@ -6,60 +6,46 @@
 #?C) Uma lista com todas as mulheres.
 #?D) Uma lista com todas as pessoas com idade acima da média.
 
-contador = 0
-soma_idades = 0
+galera = []
+pessoa = {}
 
-lista = []
-
-mulheres_lista = []
-
-acima_media = []
+soma = 0
+media = 0
 
 while True:
-    nome = str(input('\nNome: '))
-    while True:
-        sexo = str(input('Sexo [M/F]: ').upper().strip() [0])
-        if  sexo in 'MmFf':
-            break
-        else:
-            print('ERRO!!! [M]Masculino ou [F]Feminino?')
-    idade = int(input('Idade: '))
-    contador = contador + 1
-    soma_idades = soma_idades + idade
+    pessoa.clear()
+    pessoa['nome'] = str(input('Nome: '))
 
-    dados = {'Nome' : nome,
-             'Sexo' : sexo,
-             'Idade' : idade}
-    
-    lista.append(dados.copy())
-    
-    if sexo == 'F':
-        mulheres_lista.append(nome)
-    
     while True:
-        resposta = str(input('\nQuer continuar [S/N]: ').upper().strip() [0])
-        if resposta in 'SN':
+        pessoa['sexo'] = str(input('Sexo: [M/F] ')).upper() [0]
+        if pessoa['sexo'] in 'MF':
             break
-        else:
-            print('Erro!!! [S]Sim ou [N]Não?')
-    if resposta == 'N':
+        print('Erro! Por favor, digite apenas M ou F.')
+    pessoa['idade'] = int(input('Idade: '))
+    soma = soma + pessoa['idade']
+    galera.append(pessoa.copy())
+
+    while True:
+        resp = str(input('Quer continuar?[S/N]: ')).upper() [0]
+        if resp in 'SN':
+            break
+        print('Erro! Responda apenas S ou N.')
+    if resp == 'N':
         break
 
-media = soma_idades / contador
-
-
-print('\n')
-print(lista)
-print('-='*40)
-print(f'A) O grupo tem {contador} pessoas.')
-print(f'B) A média de idade é de {media:5.2f} anos.')
-print(f'C) As mulheres cadastradas foram: {mulheres_lista}')
-print('D) Lista das pessoas que estão acima da média: ')
-for p in lista:
-    if p ['Idade'] >= media:
-        print(' ')
-    for k, v in p.items():
-        print(f'{k} = {v}', end=' ')
+print('-='*30)
+print(f'A) Ao todo temos {len(galera)} pessoas cadastradas.')
+media = soma / len(galera)
+print(f'B) A média de idade é de {media:5.2f} anos')
+print('C) As mulheres cadastradas foram', end=' ')
+for p in galera:
+    if p['sexo'] in 'Ff':
+        print(f'{p["nome"]}', end=' ')
     print()
-
-print('<<ENCERRADO>>')
+print('D) Uma lista com idade acima da media.')
+for p in galera:
+    if p['idade'] >= media:
+        print(' ', end='')
+        for k, v in p.items():
+            print(f'{k} = {v}', end=' ')
+print()
