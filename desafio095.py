@@ -3,7 +3,6 @@
 #*DO APROVETAMENTO de cada jogador.
 
 while True:
-
     nome = str(input('Nome do Jogador: '))
     quantidades_partidas = int(input(f'Quantas partidas {nome} jogou?: '))
 
@@ -29,3 +28,9 @@ while True:
         print('Erro! Responda apenas S ou N.')
     if resp == 'N':
         break
+
+print('Codigo', end=' ')
+for indice in analise.keys():
+    print(f'{indice:<15}', end='')
+print()
+print('-'*40)
