@@ -23,9 +23,9 @@ while True:
             'Total' : total}
     
     while True:
-        resposta = str(input('\nQuer continuar[S/N]? ')).upper() [0]
-        if resposta in 'SN':
+        resp = str(input('Quer continuar?[S/N]: ')).upper() [0]
+        if resp in 'SN':
             break
-        print('ERRO! Responda apenas S ou N')
-        if resposta == 'N':
-            break
+        print('Erro! Responda apenas S ou N.')
+    if resp == 'N':
+        break
