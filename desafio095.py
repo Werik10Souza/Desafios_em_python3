@@ -12,7 +12,7 @@ while True:
     lista_gols = []
 
     while contador < quantidades_partidas:
-        gols_partida = int(input(f'Quantos gols na partida{contador}?: '))
+        gols_partida = int(input(f'Quantos gols na partida {contador}?: '))
         lista_gols.append(gols_partida)
         contador = contador + 1
         total = total + gols_partida
