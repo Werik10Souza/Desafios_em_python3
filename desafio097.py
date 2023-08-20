@@ -7,11 +7,13 @@
      #*Olá, mundo!
      #*~~~~~~~~~~
 
+
+
 def escreva(texto):
     texto = str(input(' '))
-    print('\n')
     print('~'*len(texto))
     print(texto)
     print('~'*len(texto))
 
 escreva('texto')
+print('\n')
