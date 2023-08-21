@@ -16,4 +16,3 @@ def escreva(texto):
     print('~'*len(texto))
 
 escreva('texto')
-print('\n')
