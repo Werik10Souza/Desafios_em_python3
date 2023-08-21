@@ -7,27 +7,18 @@
 #?b) De 10 até 0, de 2 em 2
 #?c) Uma contagem PERSONALIZADA.
 
-def letra_a():
+def contador():
     print('-='*30)
     print('Contagem de 1 até 10, de 1 em 1')
     for x in range(1,11,1):
         print(x, end=' ')
     print('FIM!')
-
-letra_a()
-
-def letra_b():
     print('-='*30)
     print('Contagem de 10 até 0, de 2 em 2')
     for y in range(10,-2,-2):
         print(y, end=' ')
     print(' FIM!')
-
-letra_b()
-
-print('-='*30)
-
-def contador(inicio, fim, passo):
+    print('-='*30)
     inicio = int(input('Inicio: '))
     fim = int(input('Fim: '))
     passo = int(input('Passo: '))
@@ -35,4 +26,4 @@ def contador(inicio, fim, passo):
         print(t, end=' ')
     print(' FIM!')
 
-contador('inicio', 'fim', 'passo')
+contador()
