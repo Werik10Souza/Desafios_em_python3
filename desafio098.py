@@ -25,9 +25,9 @@ def letra_b():
 
 letra_b()
 
-#def contador(inicio, fim, passo):
-    #inicio = int(input('Inicio: '))
-    #fim = int(input('Fim: '))
-    #passo = int(input('Passo: '))
+def contador(inicio, fim, passo):
+    inicio = int(input('Inicio: '))
+    fim = int(input('Fim: '))
+    passo = int(input('Passo: '))
 
-#contador('inicio', 'fim', 'passo')
+contador('inicio', 'fim', 'passo')
