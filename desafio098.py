@@ -25,9 +25,14 @@ def letra_b():
 
 letra_b()
 
+print('-='*30)
+
 def contador(inicio, fim, passo):
     inicio = int(input('Inicio: '))
     fim = int(input('Fim: '))
     passo = int(input('Passo: '))
+    for t in range(inicio, fim, passo):
+        print(t, end=' ')
+    print(' FIM!')
 
 contador('inicio', 'fim', 'passo')
