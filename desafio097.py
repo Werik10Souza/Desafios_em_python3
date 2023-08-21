@@ -7,7 +7,9 @@
      #*Olá, mundo!
      #*~~~~~~~~~~
 
-
+print('-'*20)
+print('ESCREVA AQUI EMBAIXO')
+print('-'*20)
 
 def escreva(texto):
     texto = str(input(' '))
