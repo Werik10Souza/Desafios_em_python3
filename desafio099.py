@@ -3,12 +3,16 @@
 
 from random import randint
 
+lista = []
+
 def maior():
     print('-='*30)
     print('Analisando os valores passados...')
-    numero = randint(0,15)
+    numero = randint(0,10)
     for x in range(numero):
-        print(f'{x}', end=' ')
-    print('\n','-='*30)
+        lista.append(x)
+    print(f'{lista} foram informados {len(lista)} ao todo')
+    print(f'O maior valor informado foi {max(lista)}')
+    print('-='*30)
 
 maior()
