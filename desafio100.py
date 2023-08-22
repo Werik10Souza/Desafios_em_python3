@@ -9,6 +9,7 @@ par = 0
 numeros = []
 
 def sorteia():
+    print('-='*30)
     valores = (randint(0,4), randint(0,4), randint(0,4), randint(0,4), randint(0,4))
     for v in valores:
         numeros.append(v)
@@ -17,10 +18,11 @@ def sorteia():
 sorteia()
 
 def somapar():
-    if (numeros[0]+numeros[1]+numeros[2]+numeros[3]+numeros[4]) % 2 == 0:
+    par = numeros[0]+numeros[1]+numeros[2]+numeros[3]+numeros[4]
+    if par % 2 == 0:
         par = sum(numeros)
-    else:
-        print('FIM')
-    print(par)
+
+    print(f'\nSOMA DOS NÚMEROS PARES: {par}')
+    print('-='*30)
 
 somapar()
