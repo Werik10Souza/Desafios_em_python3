@@ -5,7 +5,6 @@ from random import randint
 
 numeros = []
 
- 
 def sorteia():
     valores = (randint(0,4), randint(0,4), randint(0,4), randint(0,4), randint(0,4))
     for v in valores:
