@@ -19,6 +19,8 @@ sorteia()
 def somapar():
     if (numeros[0]+numeros[1]+numeros[2]+numeros[3]+numeros[4]) % 2 == 0:
         par = sum(numeros)
+    else:
+        print('FIM')
     print(par)
-    
+
 somapar()
