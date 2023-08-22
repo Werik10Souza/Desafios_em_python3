@@ -3,6 +3,9 @@
 
 from random import randint
 
+soma = 0
+par = 0
+
 numeros = []
 
 def sorteia():
@@ -12,3 +15,9 @@ def sorteia():
     print(numeros)
 
 sorteia()
+
+def somapar():
+    if (numeros[0]+numeros[1]+numeros[2]+numeros[3]+numeros[4]) % 2 == 0:
+        par = sum(numeros)
+    print(par)
+somapar()
