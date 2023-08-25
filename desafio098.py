@@ -19,11 +19,25 @@ def contador():
         print(y, end=' ')
     print(' FIM!')
     print('-='*30)
+
     inicio = int(input('Inicio: '))
     fim = int(input('Fim: '))
     passo = int(input('Passo: '))
+    
+    if inicio < 0:
+        if passo == 0:
+            passo = 1
+            for z in range(inicio, fim, passo):
+                print(z, end=' ')
+            print(' FIM!')
+
     for t in range(inicio, fim, passo):
         print(t, end=' ')
+    print(' FIM!')
+
+    if inicio >= fim:
+        for m in range(fim, inicio, passo):
+            print(m, end=' ')
     print(' FIM!')
 
 contador()
