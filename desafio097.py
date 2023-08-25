@@ -7,14 +7,15 @@
      #*Olá, mundo!
      #*~~~~~~~~~~
 
-print('-'*20)
-print('ESCREVA AQUI EMBAIXO')
-print('-'*20)
+def escreva(msg):
+    tamanho = len(msg) + 4
+    print('~' * tamanho)
+    print(f'  {msg}')
+    print('~' * tamanho)
 
-def escreva(texto):
-    texto = str(input(' '))
-    print('~'*len(texto))
-    print(texto)
-    print('~'*len(texto))
+#?PROGRAMA PRINCIPAL
+print('-'*25)
+print('ESCREVA LOGO ABAIXO ↓↓↓')
+print('-'*25)
 
-escreva('texto')
+escreva(str(input(' ')))
