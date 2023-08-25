@@ -24,6 +24,8 @@ def contador():
     fim = int(input('Fim: '))
     passo = int(input('Passo: '))
     
+    print('-='*30)
+
     if inicio < 0:
         if passo == 0:
             passo = 1
