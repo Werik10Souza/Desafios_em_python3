@@ -11,5 +11,5 @@ print('CONTROLE DE TERRENOS')
 print('-'*30)
 l = float(input('LARGURA(m): '))
 c = float(input('COMPRIMENTO(m): '))
-area('largura', 'comprimento')
+area(l, c)  
 
