@@ -3,12 +3,4 @@
 
 from datetime import date
 
-def voto():
-
-
-data = date.today()
-ano = data.year
-ano_nasc = int(input('Em qual ano você nasceu?: '))
-ano_atual = ano - ano_nasc
-
-print(f'Com {ano_atual} anos: ')
+#?USAR O "SIT" --> para situação da pessoa
