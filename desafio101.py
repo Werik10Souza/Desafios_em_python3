@@ -3,6 +3,9 @@
 
 from datetime import date
 
+def voto(ano_nasc):
+    
+
 data = date.today()
 ano = data.year
 
