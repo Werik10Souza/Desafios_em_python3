@@ -3,4 +3,7 @@
 
 from datetime import date
 
+data = date.today()
+ano = data.year
 
+print(ano)
