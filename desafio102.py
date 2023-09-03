@@ -11,6 +11,8 @@ def fatorial(num, show=0):
     :return: O valor do fatorial de número num.
     """
 
+    print('-'*40)
+
     contador = num
     f = 1
 
@@ -26,5 +28,5 @@ def fatorial(num, show=0):
 
 
 #?PROGRAMA PRINCIPAL:
-#print(fatorial(num = 5, show=True))
+print(fatorial(num = 5, show=True))
 #help(fatorial)
