@@ -13,8 +13,7 @@ def fatorial(num, show=0):
             print(' = ', end=' ')
         f = f * contador
         contador = contador - 1
-    print(f'{f}')
-
+    return(f'{f}')
 
 #?PROGRAMA PRINCIPAL:
 print(fatorial(num = 5))
