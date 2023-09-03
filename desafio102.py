@@ -13,6 +13,7 @@ def fatorial(num, show=0):
 
     contador = num
     f = 1
+
     while contador > 0:
         print(f'{contador}', end=' ')
         if contador > 1:
@@ -26,4 +27,4 @@ def fatorial(num, show=0):
 
 #?PROGRAMA PRINCIPAL:
 #print(fatorial(num = 5, show=True))
-help(fatorial)
+#help(fatorial)
