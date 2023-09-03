@@ -30,5 +30,6 @@ def fatorial(num, show=False):
 
 
 #?PROGRAMA PRINCIPAL:
-print(fatorial(5655))
+#print(fatorial(5))
+#print(fatorial(5, show=True))
 #help(fatorial)
