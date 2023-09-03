@@ -23,7 +23,6 @@ def fatorial(num, show=False):#SHOW OPCIONAL
                 print(' X ', end=' ')
             else:
                  print(' = ', end=' ')
-
         f = f * contador # f -> FATORIAL vezes(X) o contador
         contador = contador - 1 #Vai conta do MAIOR para o MENOR número
     return(f'{f}') #Valor da multiplicação feita na linha 27
