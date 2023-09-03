@@ -31,4 +31,4 @@ def fatorial(num, show=0):#SHOW OPCIONAL
 #?PROGRAMA PRINCIPAL:
 #print(fatorial(5))
 #print(fatorial(5, show=True))
-help(fatorial)
+#help(fatorial)
