@@ -1,7 +1,7 @@
 
 #*Crie um programa tenha uma FUNÇÃO FATORIAL() que receba dois parâmetro: o primeiro que indique o número a calcular e o outro chamado SHOW, que será um valor LÓGICO(OPCIONAL) indicando se será mostrado ou não na tela processo de cálculo do fatorial.
 
-def fatorial(num, show=0):
+def fatorial(num, show=False):
 
     """
     fatorial(num, show = False)
@@ -17,16 +17,18 @@ def fatorial(num, show=0):
     f = 1
 
     while contador > 0:
-        print(f'{contador}', end=' ')
-        if contador > 1:
-            print(' X ', end=' ')
-        else:
-            print(' = ', end=' ')
+        if show:
+            print(f'{contador}', end=' ')
+            if contador > 1:
+                print(' X ', end=' ')
+            else:
+                 print(' = ', end=' ')
+
         f = f * contador
         contador = contador - 1
     return(f'{f}')
 
 
 #?PROGRAMA PRINCIPAL:
-print(fatorial(num = 5, show=True))
+print(fatorial(5655))
 #help(fatorial)
