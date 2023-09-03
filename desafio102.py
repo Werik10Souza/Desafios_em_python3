@@ -19,7 +19,7 @@ def fatorial(num, show=False):#SHOW OPCIONAL
     while contador > 0:
         if show: #Essa linha determinar se vai aparecer ou não o cálculo
             print(f'{contador}', end=' ')
-            if contador > 1:
+            if contador > 1:#Quanto o contador for MAIOR que um, execute
                 print(' X ', end=' ')
             else:
                  print(' = ', end=' ')
