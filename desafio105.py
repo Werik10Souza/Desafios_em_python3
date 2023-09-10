@@ -10,6 +10,9 @@
 #*Adicione também os "docstrings" de função.
 
 def nota():
+    '''
+    DOCSTRING
+    '''
     lista = []
     contador = 0
     soma = 0
