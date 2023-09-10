@@ -8,3 +8,10 @@
 #* - A SITUAÇÃO(OPCIONAL)
 
 #*Adicione também os "docstrings" de função.
+
+def notas(*n, sit=False):
+    
+
+#?PROGRMA PRINCIPAL
+resposta = notas(5.5, 2.5, 1.5)
+print(resposta)
