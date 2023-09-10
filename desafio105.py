@@ -17,9 +17,9 @@ def notas(*n, sit=False):
     r['média'] = f'{sum(n)/len(n):.2f}'
 
     if sit:
-        if r['média'] >= str(7):
+        if r['média'] >= str(7):#CONVERSÃO de INT para STR
             r['Situação'] = 'BOA'
-        elif r['média'] >= str(5):
+        elif r['média'] >= str(5):#CONVERSÃO de INT para STR
             r['Situação'] = 'RAZOÁVEL'
         else:
             r['Situação'] = 'RUIM'
