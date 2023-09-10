@@ -10,8 +10,21 @@
 #*Adicione também os "docstrings" de função.
 
 def notas(*n, sit=False):
-    
+    r = dict()
+    r['Total'] = len(n)
+    r['Maior'] = max(n)
+    r['Menor'] = min(n)
+    r['média'] = f'{sum(n)/len(n):.2f}'
+
+    if sit:
+        if r['média'] >= str(7):
+            r['Situação'] = 'BOA'
+        elif r['média'] >= str(5):
+            r['Situação'] = 'RAZOÁVEL'
+        else:
+            r['Situação'] = 'RUIM'
+    return r
 
 #?PROGRMA PRINCIPAL
-resposta = notas(5.5, 2.5, 1.5)
+resposta = notas(5.5, 2.5, 8.5, sit=True)
 print(resposta)
