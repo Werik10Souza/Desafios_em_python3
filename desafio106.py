@@ -16,7 +16,7 @@ def mini_sistema(mensagem):
 
         if interativo == comando:
             print('~'*len(msn02))
-            print('ATÉ LOGO!!!')
+            print('ATÉ LOGO!!!', 1)
             print('~'*len(msn02))
             break
         else:
