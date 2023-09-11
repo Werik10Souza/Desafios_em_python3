@@ -3,15 +3,15 @@
 
 #*OBS: USE CORES
 
-def mini_sistema(p= ' '):
+def mini_sistema(mensagem):
     global interativo
-    mensagem = 'SISTEMA DE AJUDAR PYTHON'
+    msn = 'SISTEMA DE AJUDAR PYTHON'
     while True:
-        print('~'*len(mensagem))
+        print('~'*len(msn))
         print('SISTEMA DE AJUDAR PYTHON')
-        print('~'*len(mensagem))
-        interativo = str(input('\nFunção ou Biblioteca >  ').strip())
+        print('~'*len(msn))
+        interativo = str(input(mensagem).strip())
         help(interativo)
 
 #?PROGRAMA PRINCIPAL
-mini_sistema()
+mini_sistema('\nFunção ou Biblioteca >  ')
