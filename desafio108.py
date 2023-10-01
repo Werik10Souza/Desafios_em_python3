@@ -5,5 +5,6 @@ import ex108
 
 valor = float(input('Digite o preço: R$'))
 
-print(f'A metade {ex108.moeda(valor)} é {ex108.moeda(ex108.metade(valor))}')
-print(f'O dobro de {ex108.moeda(valor)} é {ex108.moeda(ex108.dobro(valor))}')
+print(f'A metade \033[0;35m{ex108.moeda(valor)}\033[m é \033[0;32m{ex108.moeda(ex108.metade(valor))}\033[m')
+print(f'O dobro de \033[0;35m{ex108.moeda(valor)}\033[m é \033[0;32m{ex108.moeda(ex108.dobro(valor))}\033[m')
+print(f'Aumentando 10% de \033[0;35m{ex108.moeda(valor)}\033[m é \033[0;32m{ex108.moeda(ex108.aumentar(valor, 10))}\033[m')
