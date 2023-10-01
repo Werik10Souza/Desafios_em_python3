@@ -5,9 +5,9 @@
 
 import moeda
 
-valor = float(input('Digite o valor: '))
+valor = float(input('Digite o preço: '))
 
-print(f'O valor aumentando -> {moeda.aumentar(valor)}')
-print(f'O valor diminuindo ->  {moeda.diminuir(valor)}')
-print(f'O valor dobrando -> {moeda.dobro(valor)}')
-print(f'O valor dividindo -> {moeda.metade(valor)}')
+print(f'Aumentando em 10% é {moeda.aumentar(valor, 10)}')
+print(f'Diminuindo em 10%  é {moeda.diminuir(valor, 10)}')
+print(f'O dobro de {valor} é {moeda.dobro(valor)}')
+print(f'A metade de {valor} é {moeda.metade(valor)}')
