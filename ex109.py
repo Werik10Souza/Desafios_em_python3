@@ -1,26 +1,19 @@
-def aumentar(v=0, d=0.0, sit=False):
-    if sit:
-        c = v / d
-        r = v  + c
-    return r
+def aumentar(v=0, p=0, formatar=False):
+    resultado = v + (v * (p / 100))
+    return moeda(resultado) if formatar else resultado
 
-def diminuir(v=0, d=0.0, sit=False):
-    if sit:
-        c = v / d
-        r = v + c
-    return r
+def diminuir(v=0, p=0, formatar=False):
+    resultado = v - (v * (p / 100))
+    return moeda(resultado) if formatar else resultado
 
-def metade(v=0,sit=False):
-    if sit:
-        r = v / 2
-    return r
+def metade(v=0, formatar=False):
+    resultado = v / 2
+    return moeda(resultado) if formatar else resultado
 
-def dobro(v=0, sit=False):
-    if sit:
-        r = v * 2
-    return r
+def dobro(v=0, formatar=False):
+    resultado = v * 2
+    return moeda(resultado) if formatar else resultado
 
-def moeda(v=0, sit=False):
-    if sit:
-        r = (f'R${v}')
-    return r
+def moeda(v=0):
+    return f'R${v:.2f}'
+
