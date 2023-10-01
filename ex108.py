@@ -1,4 +1,4 @@
-def aumentar(v=0, d=0.0):
+def aumentar(v=0, d=0.0, sit):
     c = v / d
     r = v  + c
     return r
