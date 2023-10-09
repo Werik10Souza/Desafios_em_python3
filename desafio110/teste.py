@@ -4,5 +4,5 @@
 import ex110
 
 valor = float(input('Digite o preço: R$'))
-ex110.resumo(valor)
+ex110.resumo(valor, 20, 12)
 

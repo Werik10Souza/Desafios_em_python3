@@ -1,29 +1,28 @@
-def aumentar(preco=0, taxa=0.0):
-    res = preco + (preco * taxa/100)
-    return (f'{res:.2f}')
+def aumentar(v=0, p=0, formatar=False):
+    resultado = v + (v * (p / 100))
+    return moeda(resultado) if formatar else resultado
 
-def diminuir(preco=0, taxa=0):
-    res = preco - (preco * taxa/100)
-    return (f'{res:.2f}')
+def diminuir(v=0, p=0, formatar=False):
+    resultado = v - (v * (p / 100))
+    return moeda(resultado) if formatar else resultado
 
-def dobro(preco=0):
-    res = preco * 2
-    return res
+def metade(v=0, formatar=False):
+    resultado = v / 2
+    return moeda(resultado) if formatar else resultado
 
-def metade(preco=0):
-    res = preco / 2
-    return res
+def dobro(v=0, formatar=False):
+    resultado = v * 2
+    return moeda(resultado) if formatar else resultado
 
-def moeda(preco=0):
-    res = f'R${preco:.2f}'
-    return res
+def moeda(v=0):
+    return f'R${v:.2f}'
 
-def resumo(v=0, a=0, t=0):
+def resumo(preco=0, taxaa=10, taxar=5):
     print('-'*40)
-    print(' RESUMO DOS VALORES')
+    print(' RESUMO DOS VALORES'.center(30))
     print('-'*40)
-    print(f'A metade de {v} é igual {moeda(metade(v))}')
-    print(f'O dobro de {v} é igual {moeda(dobro(v))}')
-    print(f'{a}% de aumento do valor {moeda(aumentar(v))}')
-    print(f'{t}% reduzindo do valor {moeda(diminuir(v))}')
+    print(f'A metade de {preco} é igual \t{metade(preco, True)}')
+    print(f'O dobro de {preco} é igual \t{dobro(preco, True)}')
+    print(f'{taxaa}% de aumento do valor \t{aumentar(preco, True)}')
+    print(f'{taxar}% reduzindo do valor \t\t{diminuir(preco, True)}')
     print('-'*40)
