@@ -1,3 +1,4 @@
+
 def aumentar(v=0, d=0.0):
     c = v / d
     r = v  + c
@@ -16,6 +17,7 @@ def dobro(v=0):
     r = v * 2
     return r
 
-def moeda(v=0):
-    r = (f'R${v}')
+def moeda(v=0, moeda='R$'):
+    r = (f'R${v}'.replace('.', ','))
     return r
+ 
