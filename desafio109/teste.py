@@ -5,8 +5,8 @@ import ex109
 
 valor = float(input('Digite o preço: R$'))
 
-valor_metade = ex109.metade(valor, False)
-valor_dobro = ex109.dobro(valor, False)
+valor_metade = ex109.metade(valor, True)
+valor_dobro = ex109.dobro(valor, True)
 valor_aumentado = ex109.aumentar(valor, 10, True)
 valor_reduzido = ex109.diminuir(valor, 13, True)
 
