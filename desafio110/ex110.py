@@ -23,6 +23,6 @@ def resumo(preco=0, taxaa=10, taxar=5):
     print('-'*40)
     print(f'A metade de {preco} é igual \t{metade(preco, True)}')
     print(f'O dobro de {preco} é igual \t{dobro(preco, True)}')
-    print(f'{taxaa}% de aumento do valor \t{aumentar(preco, True)}')
-    print(f'{taxar}% reduzindo do valor \t\t{diminuir(preco, True)}')
+    print(f'{taxaa}% de aumento do valor \t{aumentar(preco, taxaa, True)}')
+    print(f'{taxar}% reduzindo do valor \t\t{diminuir(preco, taxar, True)}')
     print('-'*40)
