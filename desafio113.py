@@ -12,7 +12,7 @@ def leiaFloat(mensagem): #permite ao usuário digitar um número de ponto flutua
             valor = float(input(mensagem)) #tenta converter a entrada do usuário em um número flutuante usando.
             return valor #Se o usuário fornecer um valor válido que pode ser convertido em um número flutuante, o código sairá do loop e retornará o valor.
         except ValueError: #Se o usuário fornecer um valor que não pode ser convertido em um número flutuante.
-            print('\033[0;31mERRO: Digite um número inteiro válido.\033[m')  #informar ao usuário que a entrada foi inválida.
+            print('\033[0;31mERRO: Digite um número flutuante válido.\033[m')  #informar ao usuário que a entrada foi inválida.
 
 #*Programa principal:
 inteiro = leiaInt('Digite um múmero inteiro: ')
