@@ -3,16 +3,24 @@
 
 #*O sistema só vai ter 2 opções: cadastrar uma nova pessoa e listar todos as pessoas cadastradas.
 
-from menu import leiaOpcoes
+from menu import * 
+from arquivo import *
+
+arq = 'cursoemvideo.txt'
+
+if not arquivoExiste(arq):
+    CriarArquivo(arq)
+
 
 #*Programa Principal
 while True:
     escolha = leiaOpcoes('\033[0;35mSua Opção:\033[m ')
     if escolha == 1:
-        print('\033[0;32mLista dos nomes e idade...\033[m')
+        #? Opção de listar o conteúdo de um arquivo
+        lerArquivo(arq)
     elif escolha == 2:
         print('\033[0;32mCadastrar Pessoas Novas Aqui...\033[m')
     elif escolha == 3:
         break
-print('\033[0;38mFim do programa...\033[m')
+print('\033[0;34mFim do programa...\033[m')
     
