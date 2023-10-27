@@ -22,9 +22,9 @@ def lerArquivo(nome):
     except:
         print('ERRO ao ler arquivo!')
     else:
-        print('-'*20)
-        print('PESSOAS CADASTRADAS'.center(20))
-        print('-'*20)
+        print('-'*45)
+        print('            PESSOAS CADASTRADAS'.center(20))
+        print('-'*45)
         for linha in a:
             dado = linha.split(';')
             dado[1] = dado[1].replace('\n', '')
