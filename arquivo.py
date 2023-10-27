@@ -26,3 +26,27 @@ def lerArquivo(nome):
         print('PESSOAS CADASTRADAS'.center(20))
         print('-'*20)
         print(a.read())
+    finally:
+        a.close()
+
+def leiaInt(mensagem):
+    while True:
+        try:
+            valor = int(input(mensagem))
+            return valor
+        except ValueError: 
+            print('\033[0;31mERRO: Digite um número inteiro válido.\033[m')
+
+def cadastrar(arq, nome='desconhecido', idade=0):
+    try:
+        a = open(arq, 'at')
+    except:
+        print('\033[0;31mHouve um ERRO na abertura do arquivo!\033[m')
+    else:
+            try:
+                a.write(f'{nome};{idade}\n')
+            except:
+                print('\033[0;31mHouve um ERRO de escrever os dados!\033[m')
+            else:
+                print(f'Novo registro de {nome} adicionado.')
+                a.close()
